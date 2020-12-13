@@ -1,21 +1,31 @@
+import React from 'react'
+import {BrowserRouter} from 'react-router-dom'
+import {useRoutes} from "./routes";
+import {Navbar} from "./components/navbar/Navbar";
+import {useAuth} from "./hooks/auth.hook";
+import {AuthContext} from "./context/AuthContext";
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const {login, logout, token, userId, type, ready} = useAuth()
+    const isAuthenticated = !!token
+    const routes = useRoutes(isAuthenticated)
+
+    if (!ready) {
+        return (
+            <div>loading...</div>
+        )
+    }
+
+    return (
+        <AuthContext.Provider value={{token, userId, type, login, logout, isAuthenticated}}>
+            <BrowserRouter>
+                <Navbar />
+                <div>
+                    {routes}
+                </div>
+            </BrowserRouter>
+        </AuthContext.Provider>
+    );
 }
 
 export default App;
