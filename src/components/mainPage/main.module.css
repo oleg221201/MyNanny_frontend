@@ -1,17 +1,12 @@
 @charset "utf-8";
-/* CSS Document */
 
 .row{
     width: 100%;
     margin: 0 !important;
 }
 
-.input{
-    margin-top: 15px!important;
-}
-
 .imgBackground{
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/baby 3.jpg");
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/baby 1.jpg");
     background-position: center 0px;
     background-size: cover;
     position: relative;
@@ -29,13 +24,32 @@
     padding: 30px 0px;
 }
 
-.regButton{
-    padding: 30px 0px !important;
+.box-p{
+    padding-bottom: 15px;
 }
 
-.regButton button{
+.list{
+    background: rgba(205, 214, 219, 0.3);
+    border: solid 1px #000000;
+}
+
+.list-left{
+    text-align: center;
+}
+
+.boxReg{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.boxReg a{
+    border: solid 1px #000000;
+    padding: 7px;
     border-radius: 15px;
     background-color: #fff9;
+    color: black!important;
+    text-decoration: none !important;
 }
 
 
@@ -48,16 +62,6 @@
     .title h3{
         font-size: 25px;
     }
-    .searchItemInput{
-        width: auto;
-    }
-    .searchItem{
-        text-align: center!important;
-    }
-    .searchItemInput{
-        display: block;
-        margin: 0 auto!important;
-    }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -67,16 +71,6 @@
     }
     .title h3{
         font-size: 25px;
-    }
-    .searchItemInput{
-        width: auto;
-    }
-    .searchItem{
-        text-align: center!important;
-    }
-    .searchItemInput{
-        display: block;
-        margin: 0 auto!important;
     }
 }
 
@@ -88,12 +82,6 @@
     .title h3{
         font-size: 35px;
     }
-    .searchItemInput{
-        width: auto;
-    }
-    .searchItem{
-        text-align: right!important;
-    }
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -101,23 +89,11 @@
     .box{
         margin: 50px 20px;
     }
-    .searchItemInput{
-        padding: 0px 50px!important;
-    }
-    .searchItem{
-        text-align: right!important;
-    }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     .box{
         margin: 50px 20px;
-    }
-    .searchItemInput{
-        padding: 0px 50px!important;
-    }
-    .searchItem{
-        text-align: right!important;
     }
 }

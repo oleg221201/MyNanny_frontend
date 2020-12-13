@@ -1,31 +1,10 @@
 @charset "utf-8";
 
-.top{
-    background-color: lightgray;
-}
-
-nav{
-    display: none;
-}
-
-.logo a{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    color: black!important;
-    text-decoration: none !important;
-}
-
-.menu {
-    margin: 0 auto;
-}
-
 .signIn{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
-
 
 .signIn a{
     color: black !important;
@@ -39,17 +18,4 @@ nav{
 
 .signIn p:first-of-type{
     white-space: pre;
-}
-
-
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .logo a{
-        margin-left: 10px;
-    }
-
-    .signIn{
-        margin-right: 20px;
-    }
 }

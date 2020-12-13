@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter} from 'react-router-dom'
 import {useRoutes} from "./routes";
-import {Navbar} from "./components/navbar/Navbar";
+import {Menu} from "./components/navbar/Menu";
 import {useAuth} from "./hooks/auth.hook";
 import {AuthContext} from "./context/AuthContext";
 
@@ -19,7 +19,7 @@ function App() {
     return (
         <AuthContext.Provider value={{token, userId, type, login, logout, isAuthenticated}}>
             <BrowserRouter>
-                <Navbar />
+                <Menu />
                 <div>
                     {routes}
                 </div>
