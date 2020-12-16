@@ -63,7 +63,7 @@ export const LoginPage = () => {
                             </div>
                             <div className={`${style.row} row`}>
                                 <div className={`${style.searchItem} col-md-6 col-lg-6`}>
-                                    <p>Придумайте пароль :</p>
+                                    <p>Введіть пароль :</p>
                                 </div>
                                 <div className="col-md-6 col-lg-6">
                                     <input

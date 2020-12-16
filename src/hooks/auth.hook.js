@@ -10,7 +10,7 @@ export const useAuth = () => {
         setToken(token)
         setUserId(userId)
         setType(type)
-        localStorage.setItem("currentUser", JSON.stringify({token: token, userId: userId}))
+        localStorage.setItem("currentUser", JSON.stringify({token: token, userId: userId, type: type}))
     }, [])
 
     const logout = useCallback(() => {
@@ -25,7 +25,7 @@ export const useAuth = () => {
         data = JSON.parse(data)
 
         if (data && data.token){
-            login(data.token, data.userId)
+            login(data.token, data.userId, data.type)
         }
 
         setReady(true)

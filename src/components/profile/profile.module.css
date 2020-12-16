@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* CSS Document */
 
 .row{
     width: 100%;
@@ -6,7 +7,7 @@
 }
 
 .imgBackground{
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/baby 1.jpg");
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/baby 3.jpg");
     background-position: center 0px;
     background-size: cover;
     position: relative;
@@ -17,6 +18,8 @@
     border: solid 1px #000000;
     border-radius: 30px;
     background: rgba(205, 214, 219, 0.3);
+    padding: 25px!important;
+    margin-bottom: 15px;
 }
 
 .box h4{
@@ -24,32 +27,9 @@
     padding: 30px 0px;
 }
 
-.box-p{
-    padding-bottom: 15px;
-}
-
-.list{
-    background: rgba(205, 214, 219, 0.3);
-    border: solid 1px #000000;
-}
-
-.list-left{
-    text-align: center;
-}
-
-.boxReg{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.boxReg a{
-    border: solid 1px #000000;
-    padding: 7px;
+.btn {
     border-radius: 15px;
     background-color: #fff9;
-    color: black!important;
-    text-decoration: none !important;
 }
 
 
@@ -58,9 +38,6 @@
 @media (max-width: 575.98px) {
     .box{
         margin: 30px 10px;
-    }
-    .title h3{
-        font-size: 25px;
     }
 }
 

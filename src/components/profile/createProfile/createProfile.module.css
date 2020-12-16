@@ -6,7 +6,7 @@
 }
 
 .imgBackground{
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/baby 1.jpg");
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../../images/baby 2.jpg");
     background-position: center 0px;
     background-size: cover;
     position: relative;
@@ -17,6 +17,7 @@
     border: solid 1px #000000;
     border-radius: 30px;
     background: rgba(205, 214, 219, 0.3);
+    padding: 0 25px;
 }
 
 .box h4{
@@ -24,32 +25,17 @@
     padding: 30px 0px;
 }
 
-.box-p{
-    padding-bottom: 15px;
-}
-
-.list{
-    background: rgba(205, 214, 219, 0.3);
-    border: solid 1px #000000;
-}
-
-.list-left{
+.paragraph {
     text-align: center;
 }
 
-.boxReg{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
+.button{
+    padding: 30px 0px !important;
 }
 
-.boxReg a{
-    border: solid 1px #000000;
-    padding: 7px;
+.button button{
     border-radius: 15px;
     background-color: #fff9;
-    color: black!important;
-    text-decoration: none !important;
 }
 
 
@@ -59,8 +45,15 @@
     .box{
         margin: 30px 10px;
     }
-    .title h3{
-        font-size: 25px;
+    .dataItemInput{
+        width: auto;
+    }
+    .dataItem{
+        text-align: center!important;
+    }
+    .dataItemInput{
+        display: block;
+        margin: 0 auto!important;
     }
 }
 
@@ -69,12 +62,28 @@
     .box{
         margin: 30px 10px;
     }
+    .dataItemInput{
+        width: auto;
+    }
+    .dataItem{
+        text-align: center!important;
+    }
+    .dataItemInput{
+        display: block;
+        margin: 0 auto!important;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
     .box{
         margin: 30px 10px;
+    }
+    .dataItemInput{
+        width: auto;
+    }
+    .dataItem{
+        text-align: right!important;
     }
 }
 
@@ -83,11 +92,17 @@
     .box{
         margin: 50px 20px;
     }
+    .dataItem{
+        text-align: right!important;
+    }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     .box{
         margin: 50px 20px;
+    }
+    .dataItem{
+        text-align: right!important;
     }
 }
