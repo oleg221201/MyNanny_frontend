@@ -5,7 +5,7 @@ import {CreateProfilePage} from "../components/profile/createProfile/CreateProfi
 import {BottomText} from "../components/commonComponents/BottomText";
 import {BottomPart} from "../components/commonComponents/BottomPart";
 import {InfoView} from "../components/profile/InfoView";
-import {Button} from "../components/profile/Button";
+import {BottomBoxSide} from "../components/profile/BottomBoxSide";
 const style = require('../components/profile/profile.module.css')
 
 
@@ -30,7 +30,7 @@ export const ProfilePage = () => {
     }, [getData])
 
     if (!userData){
-        return (<></>)
+        return (<div>loading...</div>)
     }
 
     if (!userData.isCreated){
@@ -55,7 +55,7 @@ export const ProfilePage = () => {
                             <p>{userData.user.description}</p>
                         </div>
                         <div className={`${style.row} row`}>
-                            <Button />
+                            <BottomBoxSide />
                         </div>
                     </div>
                 </div>

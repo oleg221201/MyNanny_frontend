@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+.row{
+    width: 100%;
+    margin: 0 !important;
+}
+
+.imgBackground{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/baby 4.jpg");
+
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.box {
+    border: solid 1px #000000;
+    border-radius: 30px;
+    background: rgba(205, 214, 219, 0.3);
+}
+
+.box h4{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.boxBottom{
+    background: rgba(205, 214, 189, 0.3);
+    border: solid 1px #000000;
+    border-radius: 15px;
+    padding: 10px!important;
+    margin-bottom: 15px;
+
+}
+
+.list{
+    background: rgba(205, 214, 219, 0.3);
+    border: solid 1px #000000;
+}
+
+.list-left{
+    padding: 15px;
+}
+
+.list-center{
+    text-align: center;
+}
+
+.boxSearch{
+    padding-bottom: 20px;
+}
+
+.boxSearch button{
+    border: solid 1px #000000;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #fff9;
+    color: black!important;
+    text-decoration: none !important;
+}
+
+.nanny-block{
+    padding-top: 55px!important;
+}
+
+.nanny-block-down{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .box{
+        margin: 15px 0px;
+    }
+
+    .list-left{
+        text-align: center;
+    }
+
+    .list-right{
+        text-align: center;
+    }
+
+    .list{
+        margin-bottom: 45px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .box{
+        margin: 15px 0px;
+    }
+
+    .list-left{
+        text-align: center;
+    }
+
+    .list-right{
+        text-align: center;
+    }
+
+    .list{
+        margin-bottom: 45px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .boxSearch button{
+        font-size: 16px;
+    }
+
+    /*.boxBottom{*/
+    /*    min-height: 750px!important;*/
+    /*}*/
+
+    .box{
+        margin: 20px 0px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .boxSearch button{
+        font-size: 16px;
+    }
+
+    /*.boxBottom{*/
+    /*    min-height: 800px!important;*/
+    /*}*/
+
+    .box{
+        margin: 25px 0px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    /*.boxBottom{*/
+    /*    min-height: 900px!important;*/
+    /*}*/
+
+    .box{
+        margin: 30px 0px;
+    }
+}

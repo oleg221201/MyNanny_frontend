@@ -2,9 +2,10 @@ import React, {useCallback, useContext, useEffect, useState} from "react"
 import axios from '../../API'
 import {AuthContext} from "../../context/AuthContext";
 import {useAlert} from 'react-alert'
+import {ResUserInfo} from "./ResUserInfo";
 const style = require('./profile.module.css')
 
-export const Button = () => {
+export const BottomBoxSide = () => {
     const [advertisement, setAdvertisement] = useState(null)
     const auth = useContext(AuthContext)
     const alert = useAlert()
@@ -49,7 +50,6 @@ export const Button = () => {
 
     const btn = () => {
         if (advertisement.responds){
-            const responds = advertisement.responds.toString()
             return (
                 <div>
                     <button
@@ -57,8 +57,10 @@ export const Button = () => {
                         onClick={deleteAdvertisement}
                     >Зняти оголошення</button>
                     <hr/>
-                    <p>Пошти людей, які зацікавилися Вашим оголошенням:</p>
-                    <p>{responds || "поки тут нікого нема"}</p>
+                    <p>Люди, які зацікавилися Вашим оголошенням:</p>
+                    <p>{advertisement.responds.map(id => {
+                        return <ResUserInfo id={id} />
+                    })}</p>
                 </div>
             )
         }
