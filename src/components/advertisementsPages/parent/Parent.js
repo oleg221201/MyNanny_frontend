@@ -9,6 +9,7 @@ export const Parent = ({id}) => {
     const [parent, setParent] = useState(null)
     const [userEmail, setUserEmail] = useState(null)
     const alert = useAlert()
+    const auth = useContext(AuthContext)
 
     const getData = useCallback(async () => {
         try {
@@ -37,6 +38,18 @@ export const Parent = ({id}) => {
         } catch (err) {}
     }
 
+    const btn = () => {
+        if (auth.type === "nanny"){
+            return (
+                <button
+                    onClick={respond}
+                >Цікавить</button>
+            )
+        } else {
+            return (<></>)
+        }
+    }
+
     if (!parent && !userEmail){
         return <div>loading...</div>
     }
@@ -63,9 +76,7 @@ export const Parent = ({id}) => {
                     <p>Оплата: {parent.salary}  грн./день</p>
                 </div>
                 <div className="col-md-4 col-lg-4">
-                    <button
-                        onClick={respond}
-                    >Цікавить</button>
+                    {btn()}
                 </div>
             </div>
         </div>

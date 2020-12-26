@@ -35,14 +35,14 @@ export const MainPage = () => {
                             <div className="col-md-1 col-lg-1"></div>
                             <div className={`${style.listLeft} col-12 col-sm-12 col-md-5 col-lg-5`}>
                                 <h6>Для Няні:</h6>
-                                <p>1) Стоврити профіль</p>
+                                <p>1) Створити профіль</p>
                                 <p>2) Розмістити анкету на сайті</p>
                                 <p>3) Розглянути всі можливі вакансії</p>
                             </div>
                             <div className="col-md-1 col-lg-1"></div>
                             <div className={`${style.boxP} col-md-5 col-lg-5`}>
                                 <h6>Для батьків:</h6>
-                                <p>1) Стоврити профіль</p>
+                                <p>1) Створити профіль</p>
                                 <p>2) Розмістити вакансію на сайті</p>
                                 <p>3) Розглянути всі можливі анкети</p>
                             </div>

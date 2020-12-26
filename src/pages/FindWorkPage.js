@@ -31,7 +31,7 @@ export const FindWorkPage = () => {
 
             <TopPart />
 
-            <ParentFilter />
+            <ParentFilter set={setData}/>
 
             <div className={`${style.row} row`}>
                 <div className="col-md-1 col-lg-1"></div>

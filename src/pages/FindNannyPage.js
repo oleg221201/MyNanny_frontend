@@ -30,19 +30,17 @@ export const FindNannyPage = () => {
         <div className={style.imgBackground}>
 
             <TopPart />
-
-            <NannyFilter />
-            {/*спробуй реалізувати контекст*/}
+            <NannyFilter set={setData}/>
 
             <div className={`${style.row} row`}>
                 <div className="col-md-1 col-lg-1"></div>
                 <div className="col-12 col-sm-12 col-md-10 col-lg-10">
                     <div className={style.boxBottom}>
                         <div className={`${style.row} row`}>
-                            <h4>Нові анкети нянь:</h4>
+                            <h4>Результат пошуку:</h4>
                         </div>
                         {data.nannies.map(nanny => {
-                             return <Nanny id={nanny.userId} />
+                            return <Nanny id={nanny.userId} />
                         })}
                     </div>
                 </div>

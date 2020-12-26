@@ -16,7 +16,7 @@ export const useRoutes = isAuthenticated => {
                     <MainPage />
                 </Route>
                 <Route path="/find_nanny" exact>
-                    <FindNannyPage />
+                    <FindNannyPage/>
                 </Route>
                 <Route path="/find_work" exact>
                     <FindWorkPage />
